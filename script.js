@@ -7,7 +7,7 @@ function Book(title, author, pages) {
   this.isRead = false;
   this.getInfo = function () {
     return `${title} by ${author}, ${pages}, ${
-      this.isRead ? "already read" : "not read yet"
+      this.isRead ? "already read" : "not read yet" //shorter if else statement
     }`;
   };
 }
@@ -19,4 +19,9 @@ library.push(book1);
 const book2 = new Book("Nineteen Eighty Four", "George Orwell", 295);
 library.push(book2);
 
-console.log(library.forEach((book) => console.log(book.getInfo())));
+library.forEach((book) => {
+  const p = document.createElement("p");
+
+  p.textContent = book.getInfo();
+  document.body.append(p);
+});
