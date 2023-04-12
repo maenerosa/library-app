@@ -1,13 +1,22 @@
-function Person(name, age, occupation) {
-  this.name = name;
-  this.age = age;
-  this.occupation = occupation;
-  this.sayName = function () {
-    console.log(name);
+const library = [];
+
+function Book(title, author, pages) {
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
+  this.isRead = false;
+  this.getInfo = function () {
+    return `${title} by ${author}, ${pages}, ${
+      this.isRead ? "already read" : "not read yet"
+    }`;
   };
 }
 
-const person1 = new Person("Mae", 29, "CSR");
-const person2 = new Person("Ellen", 29, "Web Developer");
+const book1 = new Book("The Hobbit", "J.R.R. Tolkien", 295);
+book1.isRead = true;
+library.push(book1);
 
-console.log(person1.sayName());
+const book2 = new Book("Nineteen Eighty Four", "George Orwell", 295);
+library.push(book2);
+
+console.log(library.forEach((book) => console.log(book.getInfo())));
