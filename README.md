@@ -1,1 +1,1 @@
-This is a simple library app using HTML, CSS and JavaScript
+A simple library webapp built with HTML, CSS and JavaScript
