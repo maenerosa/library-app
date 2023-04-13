@@ -13,6 +13,16 @@ function Book(title, author, pages) {
   this.pages = pages;
 }
 
+function addNewBook(event) {
+  event.preventDefault();
+  const book = new Book(title.value, author.value, pages.value);
+
+  library.push(book);
+
+  clearInputs();
+  closeModal();
+}
+
 function clearInputs() {
   title.value = "";
   author.value = "";
@@ -27,16 +37,6 @@ function openModal() {
   modal.style.display = "flex";
 }
 
-addBtn.addEventListener("click", function (event) {
-  event.preventDefault();
-  const book = new Book(title.value, author.value, pages.value);
-
-  library.push(book);
-
-  clearInputs();
-  closeModal();
-});
-
+addBtn.addEventListener("click", addNewBook);
 openModalBtn.addEventListener("click", openModal);
-
 closeModalBtn.addEventListener("click", closeModal);
