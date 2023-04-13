@@ -1,11 +1,11 @@
-const addBtn = document.getElementById("add-btn");
-const cancelBtn = document.getElementById("cancel-btn");
+const openModal = document.getElementById("open-modal");
+const closeModal = document.getElementById("cancel-modal");
 const modal = document.getElementById("modal");
 
-addBtn.addEventListener("click", function () {
+openModal.addEventListener("click", function () {
   modal.style.display = "flex";
 });
 
-cancelBtn.addEventListener("click", function () {
+closeModal.addEventListener("click", function () {
   modal.style.display = "none";
 });
