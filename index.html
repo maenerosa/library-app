@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Library Application</title>
+    <title>Library App</title>
   </head>
   <body>
     <div id="root">
       <section class="header">
         <h1>Library Webapp</h1>
-        <p>A simple library webapp built with HTML, CSS and JavaScript</p>
+        <p>A simple library webapp built with HTML, CSS, and JavaScript</p>
       </section>
 
       <hr />
@@ -20,40 +20,52 @@
         <article class="book">
           <div>
             <h2>HTML and CSS</h2>
-            <p>Jon Duckett</p>
+            <p class="author">Jon Duckett</p>
           </div>
-          <p>255 pages</p>
+          <p class="pages">255 pages</p>
         </article>
         <article class="book">
           <div>
             <h2>A Smarter Way to Learn JavaScript</h2>
-            <p>Mark Myers</p>
+            <p class="author">Mark Myers</p>
           </div>
-          <p>256 pages</p>
+          <p class="pages">256 pages</p>
         </article>
         <article class="book">
           <div>
             <h2>Head First JavaScript Programming: A Brain-Friendly Guide</h2>
-            <p>Elisabeth Robson</p>
+            <p class="author">Elisabeth Robson</p>
           </div>
-          <p>202 pages</p>
+          <p class="pages">202 pages</p>
         </article>
         <article class="book">
           <div>
             <h2>Eloquent JavaScript</h2>
-            <p>Marijn Haverbeke</p>
+            <p class="author">Marijn Haverbeke</p>
           </div>
-          <p>232 pages</p>
+          <p class="pages">232 pages</p>
         </article>
         <article class="book">
           <div>
             <h2>JavaScript: The Definitive Guide</h2>
-            <p>David Flanagan</p>
+            <p class="author">David Flanagan</p>
           </div>
-          <p>222 pages</p>
+          <p class="pages">222 pages</p>
         </article>
       </section>
+
+      <div class="add-btn-container">
+        <button class="add-btn">+</button>
+      </div>
+
+      <div class="modal">
+        <div class="modal-container">
+          <input type="text" placeholder="Title" />
+          <input type="text" placeholder="Author" />
+          <input type="text" placeholder="Pages" />
+        </div>
+      </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
-  <script src="js/script.js" defer></script>
 </html>

@@ -12,15 +12,15 @@ function Book(title, author, pages) {
   };
 }
 
-const book1 = new Book("The Hobbit", "J.R.R. Tolkien", 295);
-book1.isRead = true;
-library.push(book1);
+// const book1 = new Book("The Hobbit", "J.R.R. Tolkien", 295);
+// book1.isRead = true;
+// library.push(book1);
 
-const book2 = new Book("Nineteen Eighty Four", "George Orwell", 295);
-library.push(book2);
+// const book2 = new Book("Nineteen Eighty Four", "George Orwell", 295);
+// library.push(book2);
 
-const book3 = new Book("HTML and CSS", "Jon Duckett", 199);
-library.push(book3);
+// const book3 = new Book("HTML and CSS", "Jon Duckett", 199);
+// library.push(book3);
 
 library.forEach((book) => {
   const p = document.createElement("p");
