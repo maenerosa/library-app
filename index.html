@@ -54,16 +54,21 @@
         </article>
       </section>
 
-      <div class="add-btn-container">
-        <button class="add-btn">+</button>
+      <div id="modal" class="modal">
+        <form class="modal-container">
+          <h2>Add new book</h2>
+          <input type="text" placeholder="Title" required />
+          <input type="text" placeholder="Author" required />
+          <input type="text" placeholder="Pages" required />
+          <button type="submit" class="add-book-btn">Add</button>
+          <button type="button" id="cancel-btn" class="cancel-btn">
+            Cancel
+          </button>
+        </form>
       </div>
 
-      <div class="modal">
-        <div class="modal-container">
-          <input type="text" placeholder="Title" />
-          <input type="text" placeholder="Author" />
-          <input type="text" placeholder="Pages" />
-        </div>
+      <div class="add-btn-container">
+        <button id="add-btn" class="add-btn">+</button>
       </div>
     </div>
     <script src="js/script.js"></script>

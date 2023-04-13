@@ -70,7 +70,7 @@
 }
 
 .modal {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -93,4 +93,13 @@
 .modal-container input {
   height: 32px;
   width: 320px;
+}
+
+.modal-container button {
+  height: 32px;
+  font-size: 16px;
+}
+
+.add-book-btn:hover {
+  cursor: pointer;
 }
